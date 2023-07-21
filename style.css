@@ -163,7 +163,7 @@ section{
     align-items: center; /* Dikeyde hizalama */
     justify-content: center; /* Yatayda hizalama */
     margin-top: 3%;
-    box-shadow: 2px 2px 15px rgb(216,169,10);
+    /* box-shadow: 2px 2px 15px rgb(216,169,10); */
     border-radius: 15px;
  
 }
@@ -256,6 +256,7 @@ footer{
     border-bottom-right-radius: 15px;
 }
 @media(max-width: 376px){
+
 nav ul{
     position: absolute;
     left: -2%;
@@ -264,7 +265,19 @@ nav ul{
 }
   
 @media(max-width: 480px) {
-    
+.card{
+margin-right: 1px;
+height: 45px;
+width: 105px;
+}
+.card-info{
+background-color: #dfdfdf;
+}
+.cardLisans{
+    position: absolute;
+    bottom: 10%;
+    font-size: 12px;
+}    
 #logo{
     width: 60px;
     position: absolute;
@@ -283,7 +296,7 @@ nav ul li{
     
 }
 .but {
-    display: none;
+   
 }
 .infoText{
     font-size: 12px;
@@ -298,8 +311,8 @@ nav ul li{
     
 }
 .container,.info,section,footer,nav{
-    width: 100vw;
-    max-width: 100vw;
+    width: 97vw;
+    max-width: 97vw;
 }    
 .businessN{
    position: absolute;
