@@ -255,5 +255,32 @@ footer{
     border-bottom-right-radius: 15px;
 }
 
-
+@media(max-width: 480px) {
+nav ul {
+    display: none;
+}
+.infoText{
+    font-size: 12px;
+    margin-right: 4px;
+}
+#num{
+    width: 40%;
+    font-size: 12px;
+}
+.icons{
+    font-size:20px ;
+    
+}
+.container,.info,section,footer,nav{
+    width: 100vw;
+    max-width: 100vw;
+}    
+.businessN{
+   position: absolute;
+   left: 50%;
+}
+.logo{
+    margin-left: 25px;
+}
+  }
 
