@@ -17,15 +17,15 @@ function nextImage() {
 }
 
 function startSlideshow() {
-    // İlerleme işlevini 2 saniyede bir çağırmak için setInterval kullanın
+  
     setInterval(() => {
       nextImage();
-    }, 4000); // 2000 milisaniye (2 saniye) olarak ayarlanmıştır. İstediğiniz süreyi burada düzenleyebilirsiniz.
+    }, 4000); 
   }
   
-  // İlk resmi göster
+
   showImage(currentImageIndex);
   
-  // Otomatik slayt gösterisini başlat
+
   startSlideshow();
 
