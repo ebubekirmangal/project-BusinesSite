@@ -174,6 +174,7 @@ section{
     height:55vh ;
     border-radius: 15px;
     box-shadow: -2px -2px 15px rgb(216,169,10);
+    
 }
 
 .circle{
@@ -198,7 +199,7 @@ top: 50%;
 
 .r{
     margin-left:20px ;
-    left: 80%;
+    left: 79%;
 }
 .l{
     margin-right: 20px;
@@ -259,7 +260,7 @@ footer{
 
 nav ul{
     position: absolute;
-    left: -2%;
+    right:20px;
     top: 92px;
 }      
 }
@@ -276,6 +277,7 @@ background-color: #dfdfdf;
 .cardLisans{
     position: absolute;
     bottom: 10%;
+    left: 15px;
     font-size: 12px;
 }    
 #logo{
@@ -286,7 +288,7 @@ background-color: #dfdfdf;
 }
 nav ul{
     position: absolute;
-    left: 1.5%;
+    left: 0px;
     top: 92px;
 }    
 nav ul li{
