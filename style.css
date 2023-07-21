@@ -256,7 +256,7 @@ footer{
 }
 
 @media(max-width: 480px) {
-nav ul {
+nav ul, .but {
     display: none;
 }
 .infoText{
@@ -283,6 +283,9 @@ nav ul {
 }
 .logo{
     margin-left: 25px;
+}
+.img,.imgSec{
+   width: 60vw;
 }
   }
 
