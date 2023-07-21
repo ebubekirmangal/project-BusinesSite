@@ -141,8 +141,8 @@ section{
     background-color: transparent;
     font-size: 30px;
     margin: 0 10px;
-    position: absolute;
-    top: -160%;
+    /* position: absolute;
+    top: -160%; */
 
 }
 .but:focus{
@@ -181,7 +181,8 @@ section{
     height: 40px;   
     border-radius: 50%;
     position: absolute;
-    top: 58%;
+    top: 50%;
+    
 }
 .circle:active{
 width: 40px;
@@ -191,8 +192,8 @@ align-items: center;
 justify-content: center;
 background-color: #dcd8d8;
 border-radius: 50%;
-top: 58%;
-outline: 0;
+top: 50%;
+
 }
 
 .r{
@@ -256,7 +257,23 @@ footer{
 }
 
 @media(max-width: 480px) {
-nav ul, .but {
+#logo{
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+nav ul{
+    position: absolute;
+    left: 3.5px;
+}    
+nav ul li{
+    font-size: 12px;
+    width: 60px;
+    padding: 1px;
+    
+}
+.but {
     display: none;
 }
 .infoText{
@@ -277,8 +294,10 @@ nav ul, .but {
 }    
 .businessN{
    position: absolute;
-   left: 55%;
-   font-size:20px ;
+   left: 45%;
+   top: 40px;
+   font-size:15px ;
+   line-height: 15px;
    font-family: 'Dancing Script', cursive;
 }
 .logo{
