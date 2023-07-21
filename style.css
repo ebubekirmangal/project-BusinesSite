@@ -259,9 +259,9 @@ footer{
 @media(max-width: 480px) {
     
 #logo{
-    width: 50px;
+    width: 60px;
     position: absolute;
-    top: 30px;
+    top: 32px;
     left: 40px;
 }
 nav ul{
