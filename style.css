@@ -255,7 +255,14 @@ footer{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-
+@media(max-width: 376px){
+nav ul{
+    position: absolute;
+    left: -2%;
+    top: 92px;
+}      
+}
+  
 @media(max-width: 480px) {
     
 #logo{
@@ -266,7 +273,7 @@ footer{
 }
 nav ul{
     position: absolute;
-    left: 3.5px;
+    left: 1.5%;
     top: 92px;
 }    
 nav ul li{
@@ -305,8 +312,13 @@ nav ul li{
 .logo{
     margin-left: 25px;
 }
-.img,.imgSec{
+.imgs{
+    margin-top: 46.7969px;
+}
+.imgs,#imgSec{
    width: 60vw;
+   height: 40vh;
+   margin-top: 20%;
 }
   }
 
