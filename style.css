@@ -19,6 +19,12 @@ textarea {overflow:auto;}
 
 /***** RESET *****/
 
+.contain,.info,section,footer{
+    width: 75vw;
+    max-width: 1140px;
+}
+
+
 body {
     height: auto;
     display: flex;
@@ -44,11 +50,10 @@ body::before {
     filter: brightness(0.7); /* 0.7 parlaklık değeri, 0 ile 1 arasında değer alabilir */
   }  
 
-.container {
+.contain {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75vw;
     height: 120px;
     margin-top: 20px;
     border: 1px solid black;
@@ -59,9 +64,7 @@ body::before {
 }
 .info{
     margin-top: 2px;
-    width: 75vw;
     height: 40px;
-    max-width: 1140px;
     border: 1px solid black;
     box-shadow: 1px 2px 3px black;
     background-color: #f9f9f9;
@@ -94,7 +97,7 @@ nav ul li {
     border: 1.5px solid black;
     padding: 9px;
     width: 120px;
-    margin-left: 15px;
+    margin-right: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,16 +124,14 @@ nav ul li:hover a {
 #logo {
     width: 100px;
     border-radius: 50%;
-
+    margin-left: 25px;
 }
 
 section{
     margin-top: 10px;
-    width: 75vw;
     height: 65vh;
     border: 1px solid black;
     box-shadow: 1px 2px 3px black;
-    max-width: 1140px;
     background-color: #f9f9f9;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -250,17 +251,20 @@ height: 100%;
 footer{
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 75vw;
     height: 30vh;
-    max-width: 1140px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-@media(max-width: 376px){
+.aboutText{
+    width: 90%;
+    margin: 5px auto 0px auto;
+    padding: 5px;
+}
+@media(max-width: 383px){
 
 nav ul{
     position: absolute;
-    right:20px;
+    right:0px;
     top: 92px;
 }      
 }
@@ -276,7 +280,7 @@ background-color: #dfdfdf;
 }
 .cardLisans{
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     left: 15px;
     font-size: 12px;
 }    
@@ -288,7 +292,7 @@ background-color: #dfdfdf;
 }
 nav ul{
     position: absolute;
-    left: 0px;
+    left: 15px;
     top: 92px;
 }    
 nav ul li{
@@ -297,8 +301,8 @@ nav ul li{
     padding: 1px;
     
 }
-.but {
-   
+section {
+  height: 50vh; 
 }
 .infoText{
     font-size: 12px;
@@ -312,7 +316,7 @@ nav ul li{
     font-size:25px ;
     
 }
-.container,.info,section,footer,nav{
+.contain,.info,section,footer,nav{
     width: 97vw;
     max-width: 97vw;
 }    
@@ -327,13 +331,10 @@ nav ul li{
 .logo{
     margin-left: 25px;
 }
-.imgs{
-    margin-top: 46.7969px;
-}
 .imgs,#imgSec{
    width: 60vw;
    height: 40vh;
-   margin-top: 20%;
+   margin-top: 8%;
 }
   }
 
