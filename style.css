@@ -285,9 +285,15 @@ background-color: #dfdfdf;
 }
 .cardLisans{
     position: absolute;
+<<<<<<< HEAD
     bottom: 11%;
     left: 25px;
     font-size: 8px;
+=======
+    bottom: 12%;
+    left: 15px;
+    font-size: 12px;
+>>>>>>> 28e81b6f32e4ed73f4e04bebbb39504d3edc9fee
 }    
 #logo{
     width: 60px;
