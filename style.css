@@ -33,9 +33,10 @@ body {
     background-position: center;
     background-size: auto;
     background-image: url(img/tezgah.jpeg);
-    
+    overflow:scroll;
     position: relative;
 }
+
 body::before {
     content: "";
     position: absolute;
@@ -43,11 +44,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Karartma katmanı */
-    z-index: -1; /* Resmin altında kalacak */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
   }
   body::before {
-    filter: brightness(0.7); /* 0.7 parlaklık değeri, 0 ile 1 arasında değer alabilir */
+    filter: brightness(0.7); 
   }  
 
 .contain {
@@ -76,12 +77,10 @@ body::before {
 }
 .socialMedia{
     margin-right: 10px;
-      
     }
 .icons{
     font-size: 30px;
     margin-right: 5px;
-    
 }
 #num{
         width: 75%;
@@ -90,7 +89,6 @@ body::before {
 nav ul {
     list-style: none;
     display: flex;
-   
 }
 
 nav ul li {
@@ -135,55 +133,50 @@ section{
     background-color: #f9f9f9;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    
 }
 .but{
-    border: 0;
-    background-color: transparent;
-    font-size: 30px;
-    margin: 0 10px;
-    /* position: absolute;
-    top: -160%; */
-
+border: 0;
+background-color: transparent;
+font-size: 30px;
+margin: 0 10px;
 }
 .but:focus{
-    border: 0;
-    outline: 0;
+border: 0;
+outline: 0;
 }
 .section1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
 }
 
 .imgs{
-    width:35vw ;
-    height:55vh ;
-    display: flex; /* Flexbox'u etkinleştirir */
-    align-items: center; /* Dikeyde hizalama */
-    justify-content: center; /* Yatayda hizalama */
-    margin-top: 3%;
-    /* box-shadow: 2px 2px 15px rgb(216,169,10); */
-    border-radius: 15px;
+width:35vw ;
+height:55vh ;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 3%;
+border-radius: 15px;
  
 }
 #imgSec{
-    background-size: cover; 
-    background-position: center;
-    width:35vw ;
-    height:55vh ;
-    border-radius: 15px;
-    box-shadow: -2px -2px 15px rgb(216,169,10);
+background-size: cover; 
+background-position: center;
+width:35vw ;
+height:55vh ;
+border-radius: 15px;
+box-shadow: 2px 2px 15px rgb(216,169,10);
     
 }
 
 .circle{
-    width: 40px;
-    height: 40px;   
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
+width: 40px;
+height: 40px;   
+border-radius: 50%;
+position: absolute;
+top: 50%;
     
 }
 .circle:active{
@@ -199,29 +192,29 @@ top: 50%;
 }
 
 .r{
-    margin-left:20px ;
-    left: 79%;
+margin-left:20px ;
+left: 74%;
 }
 .l{
-    margin-right: 20px;
-    right: 80%;
+margin-right: 20px;
+right: 75%;
 }
 
 
 .contact{
-    background-color: rgb(216,169,10);
-    border: 1px solid black;
-    box-shadow: 1px 2px 3px black;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+background-color: rgb(216,169,10);
+border: 1px solid black;
+box-shadow: 1px 2px 3px black;
+height: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .tt{
-text-decoration: underline;
 text-align: left;
 font-size: 18px;
+margin: 20px 0px 0px 20px ;
 }
 
 #iletisim{
@@ -233,16 +226,16 @@ width: 50%;
 height: 100%;
 }
 .card-info{
-    background-color: #f9f9f9;
-    border: 1px solid black;
-    box-shadow: 1px 2px 3px black;
-    height: 10vh;
-    margin-top: 3px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+background-color: #f9f9f9;
+border: 1px solid black;
+box-shadow: 1px 2px 3px black;
+height: 10vh;
+margin-top: 3px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .card{
     height: 56.25px;
@@ -262,16 +255,49 @@ footer{
     margin: 5px auto 0px auto;
     padding: 5px;
 }
-@media(max-width: 383px){
+.caption{
+    display: none;
+}
+@media(max-width: 390px){
 
-nav ul{
-    position: absolute;
-    right:0px;
-    top: 92px;
-}      
+    nav{
+        width: 320px; margin: 60px auto 0px auto;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    } 
+    nav ul li{
+        font-size: 10px;
+        width: 35px;
+        padding: 1px;
+        margin-right: 5px;
+    }
+    nav ul li:nth-last-child(1){
+        margin-right:45px ;
+    }    
+    .card{
+        margin-right: 1px;
+        height: 36px;
+        width: 84px;
+        } 
 }
   
-@media(max-width: 480px) {
+@media(max-width: 541px) {
+    body{
+        overflow: hidden;
+    }
+    body.active{
+        overflow: scroll;
+    }
+.caption{
+    display: inline;
+    color: #dcd8d8;
+    font-size: 8px;
+}
+.caption.active{
+    display: none;
+}
 .aboutTextD{
     height: 50vh; 
     overflow: scroll;
@@ -299,20 +325,26 @@ background-color: #dfdfdf;
 #logo{
     width: 60px;
     position: absolute;
-    top: 32px;
+    top: 28px;
     left: 40px;
 }
-nav ul{
-    position: absolute;
-    left: 15px;
-    top: 92px;
-}    
-nav ul li{
-    font-size: 12px;
-    width: 60px;
-    padding: 1px;
-    
+
+nav{
+    width: 420px; margin: 60px auto 0px auto;
 }
+nav ul{
+    display: flex;
+    justify-content: center;
+} 
+nav ul li{
+    font-size: 13px;
+    width: 70px;
+    padding: 1.5px;
+    margin-right: 10px;
+}
+nav ul li:nth-last-child(1){
+    margin-right:45px ;
+}   
 section {
   height: 50vh; 
 }
@@ -344,8 +376,8 @@ section {
     margin-left: 25px;
 }
 .imgs,#imgSec{
-   width: 60vw;
-   height: 40vh;
+   width: 45vw;
+   height: 30vh;
    margin-top: 8%;
 }
 .cardLisans{
@@ -362,3 +394,67 @@ height: 20vh;
 }
   }
 
+@media(min-width:541px){
+.cardLisans{
+font-size: 13px;
+}
+.contain,.info,section,footer,nav{
+width: 97vw;
+max-width: 97vw;
+}        
+
+.businessN{
+   position: absolute;
+   left: 45%;
+   top: 40px;
+   font-size:20px ;
+   line-height: 18px;
+   font-family: 'Dancing Script', cursive;
+}
+#logo{
+    width: 70px;
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}    
+nav{
+    width: 520px; margin: 60px auto 0px auto;
+}
+nav ul{
+    display: block;
+} 
+nav ul li{
+    font-size: 15px;
+    width: 90px;
+    padding: 5px;
+    float: left;
+}
+nav ul li:nth-last-child(1){
+    margin-right:0px ;
+}   
+nav ul li a{
+    display: block;
+}
+.icons{
+    font-size:25px ;
+    
+}
+#num{
+    width: 60%;
+    font-size: 12px;
+}
+.imgs,#imgSec{
+    width: 60vw;
+    height: 50vh;
+    margin-top: 8%;
+ }
+ .r{
+    margin-left:20px ;
+    left: 78%;
+    }
+    .l{
+    margin-right: 20px;
+    right: 79%;
+    }
+    
+}
