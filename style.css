@@ -31,7 +31,7 @@ body {
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-image: url(img/tezgah.jpeg);
     
     position: relative;
@@ -217,6 +217,7 @@ top: 50%;
     justify-content: center;
     align-items: center;
 }
+
 .tt{
 text-decoration: underline;
 text-align: left;
@@ -271,9 +272,15 @@ nav ul{
 }
   
 @media(max-width: 480px) {
+.aboutTextD{
+    height: 50vh; 
+    overflow: scroll;
+}
 .tt{
     font-size: 12px;
-
+    margin: 10px 0px 0px 20px;
+    display: inline;
+    cursor: pointer;
 }
 .card{
 margin-right: 1px;
@@ -340,6 +347,18 @@ section {
    width: 60vw;
    height: 40vh;
    margin-top: 8%;
+}
+.cardLisans{
+    display: none;
+}
+.contact{
+height: 5vh;
+}
+.contact.active{
+height: 20vh;
+}
+.cardLisans.active{
+    display: inline;
 }
   }
 
