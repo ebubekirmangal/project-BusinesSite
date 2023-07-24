@@ -258,10 +258,59 @@ footer{
 .caption{
     display: none;
 }
-@media(max-width: 390px){
 
+/* Mobil Cihaz */
+@media(max-width: 356px){
+    body{
+       height: 100vh;
+     }
+    body.active{
+        overflow: scroll;
+        height: auto;
+        }
+    .caption{
+        display: inline;
+        color: #dcd8d8;
+        font-size: 8px;
+    }
+    .caption.active{
+        display: none;
+    }
+    .cardLisans{
+        display: none;
+    }
+    .cardLisans.active{
+        display: inline;
+        position: absolute;
+        bottom: 11%;
+        left: 10px;
+        font-size: 7px;
+    }
+    .contact{
+    height: 5vh;
+    }
+    .contact.active{
+    height: 20vh;
+    }
+    .contain,.info,section,footer,nav{
+        width: 97vw;
+        max-width: 97vw;
+    }    
+    .businessN{
+        position: absolute;
+        left: 45%;
+        top: 35px;
+        font-size:15px ;
+        line-height: 15px;
+        font-family: 'Dancing Script', cursive;
+     }
+    #logo{
+        width: 50px;
+        position: absolute;
+        top: 33px;
+    }
     nav{
-        width: 320px; margin: 60px auto 0px auto;
+        width: 300px; margin: 60px auto 0px auto;
     }
     nav ul{
         display: flex;
@@ -269,26 +318,57 @@ footer{
     } 
     nav ul li{
         font-size: 10px;
-        width: 35px;
-        padding: 1px;
+        width: 60px;
+        padding: 3px 0.5px;
         margin-right: 5px;
+        font-family:'Times New Roman', Times, serif;
     }
     nav ul li:nth-last-child(1){
-        margin-right:45px ;
+        margin-right:0px ;
     }    
     .card{
         margin-right: 1px;
         height: 36px;
         width: 84px;
         } 
-}
-  
-@media(max-width: 541px) {
-    body{
-        overflow: hidden;
+    .icons{
+            font-size:15px ;
+            
     }
-    body.active{
-        overflow: scroll;
+#num{
+    width: 40%;
+    font-size: 12px;
+}
+.infoText{
+    font-size:12px ;
+}
+.imgs,#imgSec{
+    width: 56vw;
+    height: 37vh;
+    margin-top: 10%;
+ }    
+ .but{
+    display: none;
+ }
+ section{
+    height: 50vh;
+ }
+.tt{
+margin: 5px 0px 0px 5px;
+font-size:14px ;
+}
+}
+.card-info{
+    margin-bottom: 10px;
+}
+/* Mobil Cihaz-Tablet */
+@media screen and (min-width: 356px) and (max-width: 768px) {
+body{
+    height: 100vh;
+ }
+body.active{
+    overflow: scroll;
+    height: auto;
     }
 .caption{
     display: inline;
@@ -298,6 +378,24 @@ footer{
 .caption.active{
     display: none;
 }
+.cardLisans{
+    display: none;
+    
+}
+.cardLisans.active{
+    display: inline;
+    position: absolute;
+    bottom: 11%;
+    left: 25px;
+    font-size: 8px;
+}
+.contact{
+height: 5vh;
+}
+.contact.active{
+height: 20vh;
+}
+
 .aboutTextD{
     height: 50vh; 
     overflow: scroll;
@@ -316,12 +414,6 @@ width: 105px;
 .card-info{
 background-color: #dfdfdf;
 }
-.cardLisans{
-    position: absolute;
-    bottom: 11%;
-    left: 25px;
-    font-size: 8px;
-}    
 #logo{
     width: 60px;
     position: absolute;
@@ -330,17 +422,19 @@ background-color: #dfdfdf;
 }
 
 nav{
-    width: 420px; margin: 60px auto 0px auto;
+    width: 75vw; margin: 60px auto 0px auto;
 }
 nav ul{
     display: flex;
     justify-content: center;
 } 
 nav ul li{
-    font-size: 13px;
-    width: 70px;
-    padding: 1.5px;
+    
+    font-size:calc(9px + 0.8vw) ;
+    width: 15vw;
+    padding: 5px 0px;
     margin-right: 10px;
+    font-family:'Times New Roman', Times, serif;
 }
 nav ul li:nth-last-child(1){
     margin-right:45px ;
@@ -376,85 +470,90 @@ section {
     margin-left: 25px;
 }
 .imgs,#imgSec{
-   width: 45vw;
-   height: 30vh;
-   margin-top: 8%;
+   width: 52vw;
+   height: 42vh;
+   margin-top: 3%;
 }
-.cardLisans{
-    display: none;
-}
-.contact{
-height: 5vh;
-}
-.contact.active{
-height: 20vh;
-}
-.cardLisans.active{
-    display: inline;
-}
+
   }
 
-@media(min-width:541px){
-.cardLisans{
-font-size: 13px;
-}
-.contain,.info,section,footer,nav{
-width: 97vw;
-max-width: 97vw;
-}        
-
-.businessN{
-   position: absolute;
-   left: 45%;
-   top: 40px;
-   font-size:20px ;
-   line-height: 18px;
-   font-family: 'Dancing Script', cursive;
-}
-#logo{
-    width: 70px;
-    position: absolute;
-    top: 26px;
-    left: 20px;
-}    
-nav{
-    width: 520px; margin: 60px auto 0px auto;
-}
-nav ul{
-    display: block;
-} 
+/* Tablet-Küçük Pc */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .cardLisans{
+        font-size: 13px;
+        }
+        .contain,.info,section,footer,nav{
+        width: 75vw;
+        max-width: 75vw;
+        }        
+        
+        .businessN{
+           position: absolute;
+           left: 45%;
+           top: 40px;
+           font-size: 18px ;
+           line-height: 18px;
+           font-family: 'Dancing Script', cursive;
+        }
+        #logo{
+            width: 70px;
+            position: absolute;
+            top: 26px;
+            left: 120px;
+        }    
+        nav{
+            width: 520px; margin: 60px auto 0px auto;
+        }
+        nav ul{
+            display: block;
+        } 
+        nav ul li{
+            font-size: 15px;
+            width: 90px;
+            padding: 5px;
+            float: left;
+        }
+        nav ul li:nth-last-child(1){
+            margin-right:0px ;
+        }   
+        nav ul li a{
+            display: block;
+        }
+        .icons{
+            font-size:25px ;
+            
+        }
+        #num{
+            width: 60%;
+            font-size: 12px;
+        }
+        .imgs,#imgSec{
+            width: 40vw;
+            height: 50vh;
+            margin-top: 5%;
+         }
+         .r{
+            margin-left:20px ;
+            left: 78%;
+            }
+            .l{
+            margin-right: 20px;
+            right: 79%;
+            }
+            .but{
+                display: none;
+            }
+        }
+/* Büyük Pc */
+@media screen and (min-width: 1023px) {
 nav ul li{
-    font-size: 15px;
-    width: 90px;
-    padding: 5px;
-    float: left;
+    width:8vw;
+    max-width: 120px;
 }
-nav ul li:nth-last-child(1){
-    margin-right:0px ;
-}   
-nav ul li a{
-    display: block;
-}
-.icons{
-    font-size:25px ;
-    
+.businessN{
+    /* font-size: ; */
 }
 #num{
-    width: 60%;
-    font-size: 12px;
+    width: 50vw;
 }
-.imgs,#imgSec{
-    width: 60vw;
-    height: 50vh;
-    margin-top: 8%;
- }
- .r{
-    margin-left:20px ;
-    left: 78%;
-    }
-    .l{
-    margin-right: 20px;
-    right: 79%;
-    }
-    
-}
+  }  

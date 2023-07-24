@@ -4,7 +4,7 @@ const contact = document.querySelector(".contact")
 const cardLisans = document.querySelector(".cardLisans")
 const iletişimBilgileri = document.querySelector(".tt").addEventListener("click",getInfo)
 const caption = document.querySelector(".caption")
-const body = document.getElementsByTagName("body")
+const body = document.querySelector("body")
 
 function getInfo(){
 if(contact.classList.contains("active")==false){
@@ -17,5 +17,6 @@ else{
   cardLisans.classList.remove("active")
   contact.classList.remove("active")
   caption.classList.remove("active")
+  body.classList.remove("active")
 }
 }
