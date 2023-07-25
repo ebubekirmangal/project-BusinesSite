@@ -26,12 +26,13 @@ textarea {overflow:auto;}
 
 
 body {
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: 100%;
     background-image: url(img/tezgah.jpeg);
     overflow:scroll;
     position: relative;
@@ -263,6 +264,11 @@ footer{
 @media(max-width: 356px){
     body{
        height: 100vh;
+       background-image: url(img/tezgah.jpeg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center center;
+       background-attachment: fixed;
      }
     body.active{
         overflow: scroll;
@@ -365,6 +371,11 @@ font-size:14px ;
 @media screen and (min-width: 356px) and (max-width: 768px) {
 body{
     height: 100vh;
+       background-image: url(img/tezgah.jpeg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center center;
+     
  }
 body.active{
     overflow: scroll;
@@ -479,6 +490,14 @@ section {
 
 /* Tablet-Küçük Pc */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        height: 100vh;
+        background-image: url(img/tezgah.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
     .cardLisans{
         font-size: 13px;
         }
@@ -554,6 +573,6 @@ nav ul li{
     /* font-size: ; */
 }
 #num{
-    width: 50vw;
+    width: 40vw;
 }
   }  
