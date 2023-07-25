@@ -26,7 +26,7 @@
 
                 <ul>
                     <li><a href="index.html">Ana sayfa</a></li>
-                    <li><a href="#">Menü</a></li>
+                    <li><a href="menu.html">Menü</a></li>
                     <li><a href="#">İçerik</a></li>
                     <li><a href="hakkımızda.html">Hakkımızda</a></li>
                     <li><a href="#">İletişim</a></li>
@@ -45,28 +45,48 @@
             </div>
 
         </div>
-        <section>
-            <div class="section1">
-                <div class="circle l"><button onclick="prevImage()" class="but"><i class="fa-solid fa-angle-right fa-rotate-180"></i></button></div>
-                <div class="imgs">
-                    <img id="imgSec"  src="section img/2.png" alt="Resim 1">
+        <div class="sections">
+            <div class="highlights">
+                <h5>Öne Çıkanlar</h5>
+                <div class="box show">
+                    Öne Çıkan 1
                 </div>
-                <div class="circle r"><button onclick="nextImage()" class="but"><i class="fa-solid fa-angle-right"></i></button></div>
-           </div>
+                <div class="box show">
+                    Öne Çıkan 2
+                </div>
+                <div class="box">
+                    Öne Çıkan 3
+                </div>
+                <div class="box">
+                    Öne Çıkan 4
+                </div>
+                <div class="box">
+                    Öne Çıkan 5
+                </div>
+                <div class="box">
+                    Öne Çıkan 6
+                </div>
+            </div>
+            <div class="section1">
+                <div class="imgs">
+                    <img id="imgSec" src="section img/2.png" alt="Resim 1">
+                </div>
+            </div>
+
+        </div>
 
 
-
-
-        </section>
         <footer>
             <div class="contact">
                 <div id="iletisim">
-                    <h6 class="tt">İletişim Bilgileri <span class="caption">daha fazla bilgi için tıklayınız...</span></h6>
-                   
+                    <h6 class="tt">İletişim Bilgileri <span class="caption">daha fazla bilgi için tıklayınız...</span>
+                    </h6>
+
                 </div>
             </div>
             <div class="card-info">
-                <span class="ml-2 cardLisans">© Tüm hakları saklıdır. Kredi kartı bilgileriniz 256bit SSL sertifikası ile
+                <span class="ml-2 cardLisans">© Tüm hakları saklıdır. Kredi kartı bilgileriniz 256bit SSL sertifikası
+                    ile
                     korunmaktadır.</span>
                 <img src="card/multinet.png" alt="Multinet Yemek K." class="card">
                 <img src="card/sodexo.jpg" alt="Sodexo Yemek K." class="card">
@@ -81,5 +101,6 @@
 </body>
 <script src="anasayfa.js"></script>
 <script src="responsİnfo.js"></script>
+<script src="scrollAni.js"></script>
 
 </html>
