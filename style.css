@@ -31,7 +31,7 @@ body {
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-image: url(img/tezgah.jpeg);
     overflow:scroll;
     position: relative;
@@ -382,12 +382,12 @@ padding: 0;
 /* Mobil Cihaz */
 @media(max-width: 356px){
     body{
-       height: 100vh;
-       background-image: url(img/tezgah.jpeg);
+       height:100vh;
+       overflow-y: auto;
        background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center center;
-       background-attachment: fixed;
+       background-position: center;
+       background-size: auto auto;
+       background-image: url(img/tezgah.jpeg);
      }
     body.active{
         overflow: scroll;
@@ -489,11 +489,6 @@ font-size:14px ;
 @media screen and (min-width: 356px) and (max-width: 768px) {
 body{
     height: 100vh;
-       background-image: url(img/tezgah.jpeg);
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center center;
-     
  }
 body.active{
     overflow: scroll;
@@ -609,11 +604,6 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body{
         height: 100vh;
-        background-image: url(img/tezgah.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
     }
     .cardLisans{
         font-size: 13px;
@@ -682,6 +672,9 @@ section {
         }
 /* Büyük Pc */
 @media screen and (min-width: 1023px) {
+body{
+    background-size: 100%;
+}
 nav ul li{
     width:8vw;
     max-width: 120px;
