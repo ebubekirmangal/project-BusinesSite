@@ -19,21 +19,17 @@ textarea {overflow:auto;}
 
 /***** RESET *****/
 
-.contain,.info,section,footer{
-    width: 75vw;
-    /* max-width: 1140px; */
+.contain,.info,.sections,footer{
+width: 80vw;
 }
 
-
 body {
+    
     height: auto;
     display: flex;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(img/tezgah.jpeg);
-    overflow:scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -125,7 +121,7 @@ nav ul li:hover a {
     margin-left: 25px;
 }
 
-section{
+/* section{
     margin-top: 10px;
     height: 65vh;
     border: 1px solid black;
@@ -134,18 +130,20 @@ section{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     
-}
+} */
 .sections{
     margin-top: 10px;
-    height: 65vh;
+    height: 70vh;
     border: 1px solid black;
     box-shadow: 1px 2px 3px black;
     background-color: #f9f9f9;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .but{
 border: 0;
@@ -162,23 +160,25 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
+width: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
 }
 
 .imgs{
-width:35vw ;
-height:55vh ;
+width:60vw ;
+height:45vh ;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 3%;
 border-radius: 15px;
  
 }
 #imgSec{
 background-size: cover; 
 background-position: center;
-width:35vw ;
-height:55vh ;
+width:60vw ;
+height:40vh ;
 border-radius: 15px;
 box-shadow: 2px 2px 15px rgb(216,169,10);
     
@@ -340,54 +340,41 @@ margin-right: 1vw;
 
 
 .highlights{
-    position: relative;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 justify-content: center;
 align-items: center;
-height: 53vh;
-width: 20vw;   
-overflow-y: scroll;
-overflow-x: hidden;
-margin-right: 10vw;
+height: 30vh;
+width: 70vw;   
+overflow-y: hidden;
+overflow-x: scroll;
 border: 1px solid black;
 border-radius: 15px;
-padding: 0;
+padding: 5px;
+margin: 10px auto;
 }
 .box{
      display: flex;
      justify-content: center;
      align-items: center;
      width: 15vw;
-     height: 25vh;
-     transform: translateX(800%);
-     transition: transform 0.4s ease;
      border: 1px solid black;
-     box-shadow: 2px 4px 5px rgb(rgb(16, 105, 137), green, blue,0.2);
-     margin-bottom: 20px;
      border-radius: 15px;
-     display: none;
+     margin-right: 1vw;
  }
- 
- .box:nth-of-type(even){
-     transform: translateX(-800%);
+ .show{
+width: 14vw;
  }
- 
- .box.show{
-     transform: translateX(0);
-     display: block;
- }
+
 
 /* ----------------------------------------------------------------------------- */
 /* Mobil Cihaz */
 @media(max-width: 356px){
+    .highlights{
+        display: none;
+    }
     body{
-       height:100vh;
-       overflow-y: auto;
-       background-repeat: no-repeat;
-       background-position: center;
-       background-size: auto auto;
-       background-image: url(img/tezgah.jpeg);
+
      }
     body.active{
         overflow: scroll;
@@ -417,7 +404,7 @@ padding: 0;
     .contact.active{
     height: 20vh;
     }
-    .contain,.info,section,footer,nav{
+    .contain,.info,.sections,footer,nav{
         width: 97vw;
         max-width: 97vw;
     }    
@@ -487,8 +474,11 @@ font-size:14px ;
 }
 /* Mobil Cihaz-Tablet */
 @media screen and (min-width: 356px) and (max-width: 768px) {
+    .highlights{
+        display: none;
+    }
 body{
-    height: 100vh;
+
  }
 body.active{
     overflow: scroll;
@@ -578,7 +568,7 @@ section {
     font-size:25px ;
     
 }
-.contain,.info,section,footer,nav{
+.contain,.info,.sections,footer,nav{
     width: 97vw;
     max-width: 97vw;
 }    
@@ -602,13 +592,10 @@ section {
 
 /* Tablet-Küçük Pc */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    body{
-        height: 100vh;
-    }
     .cardLisans{
         font-size: 13px;
         }
-        .contain,.info,section,footer,nav{
+        .contain,.info,.sections,footer,nav{
         width: 75vw;
         max-width: 75vw;
         }        
@@ -672,9 +659,6 @@ section {
         }
 /* Büyük Pc */
 @media screen and (min-width: 1023px) {
-body{
-    background-size: 100%;
-}
 nav ul li{
     width:8vw;
     max-width: 120px;
