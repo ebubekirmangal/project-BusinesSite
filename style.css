@@ -861,10 +861,14 @@ footer {
     }
 hr.secHr{
     width: 70vw;
+<<<<<<< HEAD
     border: 1px solid rgb(210, 208, 208);
 }
 .businessN{
     font-size: 18px;
     letter-spacing: 1px;
+=======
+
+>>>>>>> 3c0f83649db50fd528e9d1c155b45caa89784e93
 }
 }
