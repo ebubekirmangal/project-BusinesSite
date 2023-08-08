@@ -427,6 +427,10 @@ footer {
 /* ----------------------------------------------------------------------------- */
 /* Mobil Cihaz */
 @media(max-width: 356px) {
+    hr.secHr{
+        width: 90vw;
+        border: 1px solid rgb(210, 208, 208);
+    }
     .menu {
         width: 85vw;
         height: 58vh;
@@ -826,4 +830,14 @@ footer {
     #num {
         width: 40vw;
     }
+    .sections {
+        margin-top: 8px;
+        height: 70vh;
+        align-items: center;
+        justify-content: flex-start;
+    }
+hr.secHr{
+    width: 70vw;
+
+}
 }
