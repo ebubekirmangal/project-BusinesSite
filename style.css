@@ -593,9 +593,6 @@ footer {
     .highlights {
         display: none;
     }
-
-    body {}
-
     body.active {
         overflow: scroll;
         height: auto;
@@ -826,11 +823,6 @@ footer {
         width: 8vw;
         max-width: 120px;
     }
-
-    .businessN {
-        /* font-size: ; */
-    }
-
     #num {
         width: 40vw;
     }
