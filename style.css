@@ -54,7 +54,7 @@ body::before {
 
 .contain {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 120px;
     margin-top: 20px;
@@ -512,37 +512,31 @@ footer {
     }
 
     .businessN {
-        position: absolute;
-        left: 20%;
-        top: 1.8%;
         font-size: 15px;
-        line-height: 15px;
+        line-height: 16px;
         font-family: 'Dancing Script', cursive;
         display: inline-block;
-        width: 150px;
+        width: 70px;
     }
 
     #logo {
         width: 50px;
-        position: absolute;
-        top: 10px;
     }
 
     nav {
-        width: 300px;
-        margin: 60px auto 0px auto;
+        width: 100%;
     }
 
     nav ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     nav ul li {
         font-size: 10px;
         width: 60px;
         padding: 3px 1px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
         font-family: 'Times New Roman', Times, serif;
     }
 
@@ -590,6 +584,17 @@ footer {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+    .banner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        margin-top: 10px;
+    }
+    .contain{
+        flex-direction: column;
+        justify-content: center;
+       }
 }
 
 /* Mobil Cihaz-Tablet */
@@ -602,7 +607,7 @@ footer {
     #imgSec {
         margin-top: 3px;
         width: 80vw;
-        height: 25vh;
+        height:25vh;
     }
     hr.secHr{
         width: 90vw;
@@ -619,6 +624,8 @@ footer {
         font-size: 12px;
     }
     .sections {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         margin-top: 8px;
         height: 70vh;
         border-top-left-radius: 0px;
@@ -686,35 +693,56 @@ footer {
     .card-info {
         background-color: #dfdfdf;
     }
-
-    #logo {
-        width: 60px;
-        position: absolute;
-        top: 28px;
-        left: 30px;
+    .banner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        margin-top: 10px;
     }
-
+.contain{
+ flex-direction: column;
+ justify-content: center;
+}
+    #logo {
+        width: calc(40px + 4vw);;
+        /* position: absolute;
+        top: 28px;
+        left: 30px; */
+    }
+    .businessN {
+        /* position: absolute;
+        left: 27%;
+        top: 4%; */
+        font-size: calc(2vw + 10px);
+        line-height: 15px;
+        font-family: 'Dancing Script', cursive;
+        display: inline-block;
+        width: calc(200px + 12vw);
+    }
     nav {
-        width: 90vw;
-        margin: 75px auto 0px auto;
+    height:40px;
+    text-align: center;
+    margin-bottom: 15px;
     }
 
     nav ul {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        justify-content:space-around;
     }
 
     nav ul li {
-
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+        margin-right:  5px;
+        margin-left:5px ;
+        width: 14vw;
         font-size: calc(9px + 0.8vw);
-        width: 20vw;
         padding: 2.5px 0px;
-        margin-right: 7.5px;
         font-family: 'Times New Roman', Times, serif;
-    }
-
-    nav ul li:nth-last-child(1) {
-        margin-right: 45px;
     }
 
     section {
@@ -722,7 +750,7 @@ footer {
     }
 
     .infoText {
-        font-size: 12px;
+        font-size: calc(9px + 0.8vw);
         margin-right: 4px;
     }
 
@@ -743,21 +771,6 @@ footer {
     nav {
         width: 97vw;
         max-width: 97vw;
-    }
-
-    .businessN {
-        position: absolute;
-        left: 27%;
-        top: 4%;
-        font-size: 17px;
-        line-height: 15px;
-        font-family: 'Dancing Script', cursive;
-        display: inline-block;
-        width: 150px;
-    }
-
-    .logo {
-        margin-left: 25px;
     }
     .info{
         height: 33px;

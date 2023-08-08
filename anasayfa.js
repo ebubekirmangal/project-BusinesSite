@@ -1,4 +1,4 @@
-const imgs = ["img/yapim.jpg", "img/yapim.jpg", "img/yapim.jpg", "img/yapim.jpg"];
+const imgs = ["img/yapim.jpg", "img/yapim2.jpg", "img/yapim.jpg", "img/yapim2.jpg"];
 let currentIndex = 0;
 
 function showImg() {
