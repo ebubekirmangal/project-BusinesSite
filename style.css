@@ -594,6 +594,10 @@ footer {
 
 /* Mobil Cihaz-Tablet */
 @media screen and (min-width: 356px) and (max-width: 768px) {
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .imgs,
     #imgSec {
         margin-top: 3px;
@@ -691,8 +695,8 @@ footer {
     }
 
     nav {
-        width: 75vw;
-        margin: 60px auto 0px auto;
+        width: 90vw;
+        margin: 75px auto 0px auto;
     }
 
     nav ul {
@@ -703,9 +707,9 @@ footer {
     nav ul li {
 
         font-size: calc(9px + 0.8vw);
-        width: 15vw;
-        padding: 5px 0px;
-        margin-right: 10px;
+        width: 20vw;
+        padding: 2.5px 0px;
+        margin-right: 7.5px;
         font-family: 'Times New Roman', Times, serif;
     }
 
@@ -754,6 +758,9 @@ footer {
 
     .logo {
         margin-left: 25px;
+    }
+    .info{
+        height: 33px;
     }
 }
 
@@ -861,14 +868,10 @@ footer {
     }
 hr.secHr{
     width: 70vw;
-<<<<<<< HEAD
     border: 1px solid rgb(210, 208, 208);
 }
 .businessN{
     font-size: 18px;
     letter-spacing: 1px;
-=======
-
->>>>>>> 3c0f83649db50fd528e9d1c155b45caa89784e93
 }
 }
