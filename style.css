@@ -28,7 +28,7 @@ footer {
 }
 
 body {
-
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -427,6 +427,10 @@ footer {
 /* ----------------------------------------------------------------------------- */
 /* Mobil Cihaz */
 @media(max-width: 356px) {
+    hr.secHr{
+        width: 90vw;
+        border: 1px solid rgb(210, 208, 208);
+    }
     .menu {
         width: 85vw;
         height: 58vh;
@@ -590,6 +594,34 @@ footer {
 
 /* Mobil Cihaz-Tablet */
 @media screen and (min-width: 356px) and (max-width: 768px) {
+    .imgs,
+    #imgSec {
+        margin-top: 3px;
+        width: 80vw;
+        height: 25vh;
+    }
+    hr.secHr{
+        width: 90vw;
+        border: 1px solid rgb(210, 208, 208);
+    }
+    .menu {
+        width: 85vw;
+        height: 58vh;
+    }
+    
+    .menuOptions {
+        width: 35vw;
+        height: 15.375vh;
+        font-size: 12px;
+    }
+    .sections {
+        margin-top: 8px;
+        height: 70vh;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        align-items: center;
+        justify-content: flex-start;
+    }
     .highlights {
         display: none;
     }
@@ -655,7 +687,7 @@ footer {
         width: 60px;
         position: absolute;
         top: 28px;
-        left: 40px;
+        left: 30px;
     }
 
     nav {
@@ -711,23 +743,18 @@ footer {
 
     .businessN {
         position: absolute;
-        left: 45%;
-        top: 40px;
-        font-size: 15px;
+        left: 27%;
+        top: 4%;
+        font-size: 17px;
         line-height: 15px;
         font-family: 'Dancing Script', cursive;
+        display: inline-block;
+        width: 150px;
     }
 
     .logo {
         margin-left: 25px;
     }
-
-    .imgs,
-    #imgSec {
-        width: 52vw;
-        height: 42vh;
-    }
-
 }
 
 /* Tablet-Küçük Pc */
@@ -826,4 +853,18 @@ footer {
     #num {
         width: 40vw;
     }
+    .sections {
+        margin-top: 8px;
+        height: 70vh;
+        align-items: center;
+        justify-content: flex-start;
+    }
+hr.secHr{
+    width: 70vw;
+    border: 1px solid rgb(210, 208, 208);
+}
+.businessN{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
 }
