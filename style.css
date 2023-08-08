@@ -619,6 +619,8 @@ footer {
         font-size: 12px;
     }
     .sections {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         margin-top: 8px;
         height: 70vh;
         border-top-left-radius: 0px;
