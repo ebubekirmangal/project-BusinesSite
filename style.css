@@ -738,9 +738,9 @@ footer {
         align-items: center;
         justify-content:center;
         text-align: center;
-        margin-right:  5px;
-        margin-left:5px ;
-        width: 14vw;
+        margin-right:2.5px;
+        margin-left:2.5px ;
+        width: 16.5vw;
         font-size: calc(9px + 0.8vw);
         padding: 2.5px 0px;
         font-family: 'Times New Roman', Times, serif;
@@ -888,4 +888,14 @@ hr.secHr{
     font-size: 18px;
     letter-spacing: 1px;
 }
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 10px;
+}
+.contain{
+    justify-content: space-between;
+   }
 }
