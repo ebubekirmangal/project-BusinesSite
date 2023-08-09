@@ -298,7 +298,7 @@ footer {
 }
 
 .businessN {
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -515,7 +515,7 @@ footer {
     .businessN {
         font-size: 15px;
         line-height: 16px;
-        font-family: 'Dancing Script', cursive;
+        /* font-family: 'Dancing Script', cursive; */
         display: inline-block;
         width: 70px;
     }
@@ -629,8 +629,6 @@ footer {
         border-top-right-radius: 15px;
         margin-top: 8px;
         height: 70vh;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
         align-items: center;
         justify-content: flex-start;
     }
@@ -715,9 +713,9 @@ footer {
         /* position: absolute;
         left: 27%;
         top: 4%; */
-        font-size: calc(2vw + 10px);
+        font-size: calc(1vw + 10px);
         line-height: 15px;
-        font-family: 'Dancing Script', cursive;
+        /* font-family: 'Dancing Script', cursive; */
         display: inline-block;
         width: calc(200px + 12vw);
     }
@@ -799,7 +797,7 @@ footer {
         top: 40px;
         font-size: 18px;
         line-height: 18px;
-        font-family: 'Dancing Script', cursive;
+        /* font-family: 'Dancing Script', cursive; */
     }
 
     #logo {
