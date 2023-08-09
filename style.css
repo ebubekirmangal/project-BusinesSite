@@ -600,9 +600,36 @@ footer {
 
 /* Mobil Cihaz-Tablet */
 @media screen and (min-width: 356px) and (max-width: 768px) {
+   .aboutImg{
+    width:200px ;
+    height: 105px;
+    justify-content: center;
+    align-items: center;
+   }
+   .bussInf{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0px;
+   }
+   .ll{
+    margin: 10px auto 0px auto;
+    height: 145px;
+    /* justify-content: center;
+    align-items: center; */
+
+   }
+   .aboutTextD{
+    flex-direction: column;
+    
+   }
+   .aboutText{
+    height: 300px;
+    overflow: scroll;
+   }
     body{
         max-width: 100%;
         overflow-x: hidden;
+        overflow-y: auto;
     }
     .imgs,
     #imgSec {
@@ -669,11 +696,6 @@ footer {
 
     .contact.active {
         height: 20vh;
-    }
-
-    .aboutTextD {
-        height: 50vh;
-        overflow: scroll;
     }
 
     .tt {
@@ -759,7 +781,7 @@ footer {
     }
 
     .icons {
-        font-size: 25px;
+        font-size: 2px;
 
     }
 
