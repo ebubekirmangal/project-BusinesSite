@@ -288,7 +288,7 @@ footer {
 }
 
 .aboutText {
-    width: 90%;
+    width: 40vw;
     margin: 5px auto 0px auto;
     padding: 5px;
 }
@@ -305,14 +305,56 @@ footer {
 .aboutImg {
     width: 375px;
     height: 200px;
-    filter: brightness(85%);
     margin-right: 20px;
 }
 
 .ll {
     margin: auto 0px;
 }
+.aboutTextD{
+    margin: auto 0px;
+}
 
+.miniSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto ;
+}
+.contacts{
+display: flex;
+flex-direction: column;
+background-color: rgb(216, 169, 10);
+padding: 25px;
+height: 476px;
+margin-right: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    background-color:white;
+    border: 0px;
+    outline: 0;
+    padding: 5px 0px;
+    margin-top: 20px;
+}
+form button:active{
+  transform: scale(0.95);
+  border: 0px;
+}
+.formContact input{
+    margin-bottom: 15px;
+    width: 300px;
+    height: 40px;
+    border: 0px;
+}
+.formContact textarea{
+    height: 120px;
+    border: 0px;
+
+}
 /* Menü Ayarları */
 .menu {
     width: 64vw;
@@ -604,8 +646,8 @@ footer {
 /* Mobil Cihaz-Tablet */
 @media screen and (min-width: 356px) and (max-width: 768px) {
    .aboutImg{
-    width:200px ;
-    height: 105px;
+    width:182.5px ;
+    height: 126px;
     justify-content: center;
     align-items: center;
    }
@@ -626,7 +668,8 @@ footer {
     
    }
    .aboutText{
-    height: 37vh;
+    height: 39vh;
+    width: 80vw;
     overflow: scroll;
    }
     body{
@@ -644,6 +687,11 @@ footer {
     hr.secHr{
         width: 90vw;
         border: 1px solid rgb(210, 208, 208);
+    }
+    hr.secHrs{
+        width: 90vw;
+        border: 1px solid rgb(210, 208, 208);
+        margin: 0;
     }
     .menu {
         width: 85vw;
@@ -925,5 +973,12 @@ hr.secHr{
 }
 .contain{
     justify-content: space-between;
+   }
+   body{
+    width: auto;
+
+   }
+   footer{
+    height: auto;
    }
 }
